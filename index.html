@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X dress</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="product-colors.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div id="app">
+      <main class="main-element">
+        <header class="app-header flex-bw">
+          <div class="menu">
+            <ul class="menu-items flex">
+              <a href="#"><li class="menu-item">فروشگاه</li></a>
+              <a href="#"><li class="menu-item">درباره ما</li></a>
+              <a href="#"><li class="menu-item">سرویس و پشتیبانی</li></a>
+            </ul>
+          </div>
+          <div class="logo">
+            <a class="logo-link flex-center" href="#">
+              <h1><span>X</span> dress</h1>
+              <img src="/assest/logo.png" alt="" />
+            </a>
+          </div>
+        </header>
+        <!--  -->
+        <section id="intro-section" class="section intro flex-bw">
+          <div class="footages flex-center">
+            <div class="t-shirt-2">
+              <img src="assest/logo_copy-removebg-preview.png" alt="" />
+            </div>
+            <div class="t-shirt flex-center">
+              <img src="/assest/logo_copy-removebg-preview.png" alt="t-shirt" />
+            </div>
+            <div class="hanger">
+              <img src="/assest/hanger-footage.webp" alt="hanger" />
+            </div>
+          </div>
+          <!--  -->
+          <div class="titles">
+            <h1 class="main-title">یه انتخاب <span>خاص</span></h1>
+            <div class="main-buttons flex">
+              <a href="#" class="login-to-shop">
+                <button>ورود به فروشگاه</button>
+              </a>
+              <a href="#" class="vip">
+                <button>سفارش اختصاصی</button>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!--  -->
+        <section id="order-section" class="section">
+          <div class="order-section-title">
+            <h2>سفارش اختصاصی</h2>
+            <p>سفارش اختصاصی بلوز , تیشرت , هودی و ... پذیرفته میشود.</p>
+            <p>برای سفارش از فرم زیر استفاده کنید و پس از تکمیل ثبت سفارش</p>
+            <p>کلیک کنید.</p>
+          </div>
+          <!--  -->
+          <div class="order-view flex-bw">
+            <div class="order-selector flex">
+              <div class="order-options">
+                <div class="order-option-box flex-bw">
+                  <div class="order-option flex-center">
+                    <label class="flex-center">
+                      <input
+                        type="radio"
+                        name="product-check-name"
+                        value="hoodie"
+                      />
+                      <span>هودی</span>
+                      <span class="custom-checkbox"></span>
+                    </label>
+                  </div>
+                  <div class="order-option flex-center">
+                    <label class="flex-center">
+                      <input
+                        type="radio"
+                        name="product-check-name"
+                        value="bluse"
+                      />
+                      <span>بلوز</span>
+                      <span class="custom-checkbox"></span>
+                    </label>
+                  </div>
+                  <div class="order-option flex-center">
+                    <label class="flex-center">
+                      <input
+                        type="radio"
+                        name="product-check-name"
+                        value="t-shirt"
+                      />
+                      <span>تیشرت</span>
+                      <span class="custom-checkbox"></span>
+                    </label>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="order-option-box flex-bw">
+                  <div class="order-option flex-center">
+                    <label class="flex-center">
+                      <input
+                        type="radio"
+                        name="product-check-chap"
+                        value="one-chap"
+                      />
+                      <span>چاپ یک طرف</span>
+                      <span class="custom-checkbox"></span>
+                    </label>
+                  </div>
+                  <div class="order-option flex-center">
+                    <label class="flex-center">
+                      <input
+                        type="radio"
+                        name="product-check-chap"
+                        value="two-chap"
+                      />
+                      <span>چاپ دو طرف</span>
+                      <span class="custom-checkbox"></span>
+                    </label>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="order-option-box flex-bw counter-sec">
+                  <div class="order-option flex-bw">
+                    <div>
+                      <h3 class="count-h3">تعداد :</h3>
+                    </div>
+                    <div class="counter flex-center">
+                      <div class="icon flex-center" id="plus">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </div>
+                      <div>
+                        <h4 class="count">0</h4>
+                      </div>
+                      <div class="icon flex-center" id="mines">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="order-option-box flex-bw">
+                  <div>
+                    <h3 class="count-h3">رنگ :</h3>
+                  </div>
+                  <!--  -->
+                  <div class="colors-radios flex-center">
+                    <div class="order-option flex-center">
+                      <label class="flex-center">
+                        <input type="radio" name="product-color" value="red" />
+                        <span class="custom-checkbox red"></span>
+                      </label>
+                    </div>
+                    <!--  -->
+                    <div class="order-option flex-center">
+                      <label class="flex-center">
+                        <input type="radio" name="product-color" value="blue" />
+                        <span class="custom-checkbox blue"></span>
+                      </label>
+                    </div>
+                    <!--  -->
+                    <div class="order-option flex-center">
+                      <label class="flex-center">
+                        <input
+                          type="radio"
+                          name="product-color"
+                          value="white"
+                        />
+                        <span class="custom-checkbox white"></span>
+                      </label>
+                    </div>
+                    <!--  -->
+                    <div class="order-option flex-center">
+                      <label class="flex-center">
+                        <input
+                          type="radio"
+                          name="product-color"
+                          value="black"
+                        />
+                        <span class="custom-checkbox black"></span>
+                      </label>
+                    </div>
+                    <!--  -->
+                    <div class="order-option flex-center">
+                      <label class="flex-center">
+                        <input
+                          type="radio"
+                          name="product-color"
+                          value="yellow"
+                        />
+                        <span class="custom-checkbox yellow"></span>
+                      </label>
+                    </div>
+                    <!--  -->
+                    <div class="order-option flex-center">
+                      <label class="flex-center">
+                        <input
+                          type="radio"
+                          name="product-color"
+                          value="green"
+                        />
+                        <span class="custom-checkbox green"></span>
+                      </label>
+                    </div>
+                    <!--  -->
+                    <div class="order-option flex-center">
+                      <label class="flex-center">
+                        <input type="radio" name="product-color" value="gray" />
+                        <span class="custom-checkbox gray"></span>
+                      </label>
+                    </div>
+                    <!--  -->
+                  </div>
+                </div>
+                <!--  -->
+                <div class="order-option-box flex-bw">
+                  <div class="order-option flex-bw total-price">
+                    <h1>مجموع:</h1>
+                    <div class="total flex-center">
+                      <h2>30<span>000</span></h2>
+                      <span>تومان</span>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+            </div>
+            <!--  -->
+            <div class="order-product-view">
+              <figure class="product-bg flex-center">
+                <img
+                  src="/assest/t-shirt-png.webp"
+                  alt=""
+                  class="product-img"
+                />
+              </figure>
+              <div class="order-option-box flex-bw pay-btn-cr">
+                <a href="#" class="order-option flex-bw pay-btn-link">
+                  <button class="pay-btn">اطلاعات و پرداخت</button>
+                </a>
+              </div>
+              <!--  -->
+            </div>
+            <!--  -->
+          </div>
+          <!--  -->
+        </section>
+        <div id="contact-us-sc" class="contact-us-section section flex-bw">
+          <div class="contact-us-bg flex-bw">
+            <div class="right-side-contact-us">
+              <figure class="svg">
+                <img src="/assest/Contact us-amico.png" alt="" />
+              </figure>
+              <div class="phone-number flex">
+                <div class="phone-number-title">
+                  <h4>شماره تماس:</h4>
+                </div>
+                <div class="phone-numbers">
+                  <p>
+                    <span>342</span>
+                    <span>9511</span>
+                    <span>0904</span>
+                  </p>
+                  <p>
+                    <span>514</span>
+                    <span>1120</span>
+                    <span>0912</span>
+                  </p>
+                </div>
+              </div>
+              <div class="email flex">
+                <h4>ایمیل:</h4>
+                <a href="#">xtremedoto@gmail.com</a>
+              </div>
+              <div class="whats-app-cr flex-center">
+                <h4>گفت و گو در واتساپ</h4>
+                <li class="flex-center">
+                  <ion-icon name="logo-whatsapp"></ion-icon>
+                </li>
+              </div>
+            </div>
+            <div class="left-side-contact-us">
+              <div class="cr-forms-info-title">
+                <h1>تماس باما</h1>
+                <p>برای ارتباط بهتر با مشتری با این گزینه را در سایت</p>
+                <p>برای شما عزیزان فعال نموده ایم برای تماس باما میتوانید</p>
+                <p>فرم زیل را پر نمایید و در اسرع وقت همکاران ما با شما</p>
+                <p>تماس خواهند گرفت.</p>
+              </div>
+              <div class="form-control">
+                <div class="form-cr">
+                  <label for="name">نام</label>
+                  <input type="text" name="name" id="name" />
+                </div>
+                <div class="form-cr">
+                  <label for="email">ایمیل</label>
+                  <input type="email" name="email" id="email" />
+                </div>
+                <div class="form-cr">
+                  <label for="messeage">پیام شما</label>
+                  <textarea
+                    name="messeage"
+                    id="messeage"
+                    cols="30"
+                    rows="5"
+                    placeholder="پیام خود را بنویسید"
+                  ></textarea>
+                </div>
+                <a href="#" class="send-msg-btn flex-center"> ارسال</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!--  -->
+    <script src="product-object.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
